@@ -1,0 +1,12 @@
+<!-- String Interpolation -->
+<h1>
+  the title name is: {{title}}
+</h1>
+<p>total value is:{{num1+num2}}</p>
+ 
+<!--<button [disabled]="!showButton">button added</button>-->
+
+<button (click) = "eventbutton()" [disabled]="!showButton">Click Btn</button>
+<input type="text" (input)="onTextInput($event)">
+<p>{{textvalue}}</p>
+<input type="text"[(ngModel)]="textvalue">
